@@ -2,37 +2,37 @@
 
 namespace Engine.Forms.UserControls
 {
-    public partial class StartStopControl : UserControl, IUserControlAvailability
+    public partial class AddDeleteControl : UserControl, IUserControlAvailability
     {
         /// <summary>
         ///  Event Delegates
         /// </summary>
-        public EventHandler StartClicked = delegate { };
-        public EventHandler StopClicked = delegate { };
+        public EventHandler AddClicked = delegate { };
+        public EventHandler DeleteClicked = delegate { };
         /// <summary>
         /// Event Delegation Methods
         /// </summary>
-        private void OnStartClicked(EventArgs oArgs)
+        private void OnAddClicked(EventArgs oArgs)
         {
-            EventHandler oHandler = StartClicked;
+            EventHandler oHandler = AddClicked;
             oHandler?.Invoke(this, oArgs);
         }
-        private void OnStopClicked(EventArgs oArgs)
+        private void OnDeleteClicked(EventArgs oArgs)
         {
-            EventHandler oHandler = StopClicked;
+            EventHandler oHandler = DeleteClicked;
             oHandler?.Invoke(this, oArgs);
         }
-        public StartStopControl()
+        public AddDeleteControl()
         {
             InitializeComponent();
         }
-        private void Start_Click(object oSender, EventArgs oArgs)
+        private void Add_Click(object oSender, EventArgs oArgs)
         {
-            OnStartClicked(EventArgs.Empty);
+            OnAddClicked(EventArgs.Empty);
         }
-        private void Stop_Click(object oSender, EventArgs oArgs)
+        private void Delete_Click(object oSender, EventArgs oArgs)
         {
-            OnStopClicked(EventArgs.Empty);
+            OnDeleteClicked(EventArgs.Empty);
         }
         public void EnableAll()
         {

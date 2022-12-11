@@ -1,6 +1,6 @@
 ﻿namespace Engine.Forms.UserControls
 {
-    partial class StartStopControl
+    partial class AddDeleteControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,24 +34,24 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // StartButton
+            // AddButton
             // 
             this.AddButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AddButton.Location = new System.Drawing.Point(0, 0);
-            this.AddButton.Name = "StartButton";
+            this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(75, 30);
             this.AddButton.TabIndex = 0;
-            this.AddButton.Text = "Start";
+            this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = true;
             // 
-            // StopButton
+            // DeleteButton
             // 
             this.DeleteButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.DeleteButton.Location = new System.Drawing.Point(80, 0);
-            this.DeleteButton.Name = "StopButton";
+            this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 30);
             this.DeleteButton.TabIndex = 1;
-            this.DeleteButton.Text = "Stop";
+            this.DeleteButton.Text = "Delete";
             this.DeleteButton.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -64,12 +64,12 @@
             this.panel1.Size = new System.Drawing.Size(155, 30);
             this.panel1.TabIndex = 0;
             // 
-            // StartStopControl
+            // AddDeleteControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "StartStopControl";
+            this.Name = "AddDeleteControl";
             this.Size = new System.Drawing.Size(155, 30);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
